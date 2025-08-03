@@ -1,20 +1,53 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import globeImage from "@/assets/globe-hero.jpg";
 import bookImage from "@/assets/book-hero.jpg";
 import brainImage from "@/assets/brain-hero.jpg";
+import { useEffect, useState } from "react";
+import { removeBackground, loadImage } from "@/lib/background-removal";
 
 // Change this to switch between hero images: 'globe', 'book', or 'brain'
 const HERO_IMAGE_TYPE: 'globe' | 'book' | 'brain' = 'brain';
 
 export function HeroSection() {
+  const [processedBrainImage, setProcessedBrainImage] = useState<string | null>(null);
+  const [isProcessing, setIsProcessing] = useState(false);
+
+  // Process brain image to remove background
+  useEffect(() => {
+    if (HERO_IMAGE_TYPE === 'brain' && !processedBrainImage && !isProcessing) {
+      setIsProcessing(true);
+      const processImage = async () => {
+        try {
+          const response = await fetch(brainImage);
+          const blob = await response.blob();
+          const img = await loadImage(blob);
+          const processedBlob = await removeBackground(img);
+          const processedUrl = URL.createObjectURL(processedBlob);
+          setProcessedBrainImage(processedUrl);
+        } catch (error) {
+          console.error('Failed to process brain image:', error);
+          // Fallback to original image
+          setProcessedBrainImage(brainImage);
+        } finally {
+          setIsProcessing(false);
+        }
+      };
+      processImage();
+    }
+  }, [processedBrainImage, isProcessing]);
+
   // Select hero image based on type
   const getHeroImage = () => {
     switch (HERO_IMAGE_TYPE) {
       case 'book':
         return { src: bookImage, alt: "Open book representing the full financial story", className: "w-full h-full object-contain" };
       case 'brain':
-        return { src: brainImage, alt: "Brain representing financial intelligence", className: "w-full h-full object-contain" };
+        return { 
+          src: processedBrainImage || brainImage, 
+          alt: "Brain representing financial intelligence and pattern recognition", 
+          className: "w-full h-full object-contain filter drop-shadow-lg" 
+        };
       default:
         return { src: globeImage, alt: "Earth globe representing global creator economy", className: "w-full h-full object-cover rounded-full" };
     }
@@ -24,17 +57,18 @@ export function HeroSection() {
 
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        {/* Centered Content */}
+        <div className="space-y-12">
           
-          {/* Left Content */}
-          <div className="space-y-8 text-center lg:text-left">
+          {/* Hero Content */}
+          <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
                 You need the full story.
               </h1>
               
-              <div className="space-y-4 max-w-2xl mx-auto lg:mx-0">
+              <div className="space-y-4 max-w-3xl mx-auto">
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   Most creators know the brand, the collab, the PayPal balance. But they don't 
                   know the pattern. They don't know what's working. And they don't know what 
@@ -49,12 +83,13 @@ export function HeroSection() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-4">
               <Button 
                 size="lg" 
-                className="bg-foreground text-background hover:bg-foreground/90 hover:scale-105 px-8 py-3 text-base font-semibold rounded-full min-w-[200px] transition-all duration-200"
+                className="bg-foreground text-background hover:bg-foreground/90 hover:scale-105 px-8 py-3 text-base font-semibold rounded-full min-w-[200px] transition-all duration-200 group"
               >
-                Get the System
+                Start Free Trial
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button 
@@ -62,36 +97,45 @@ export function HeroSection() {
                 size="lg"
                 className="border-border/50 bg-background/50 hover:bg-secondary/30 hover:scale-105 px-8 py-3 text-base rounded-full min-w-[200px] group transition-all duration-200"
               >
-                Book a walkthrough
-                <ChevronDown className="ml-2 h-4 w-4 group-hover:translate-y-0.5 transition-transform" />
+                <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+                See Demo
               </Button>
             </div>
           </div>
 
-          {/* Right Visual */}
-          <div className="relative flex items-center justify-center lg:justify-end">
-            <div className="relative w-full max-w-lg lg:max-w-xl">
-              {/* Background Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/20 rounded-full blur-3xl scale-110"></div>
+          {/* Brain Visual - Centered */}
+          <div className="relative flex items-center justify-center">
+            <div className="relative w-full max-w-md lg:max-w-lg">
+              {/* Subtle background glow representing neural connections */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/10 rounded-full blur-2xl scale-125"></div>
               
-              {/* Main Image */}
+              {/* Financial data patterns floating around brain */}
+              <div className="absolute top-8 left-8 animate-pulse">
+                <div className="text-xs font-mono text-primary/60 bg-primary/10 px-2 py-1 rounded">$12.5K</div>
+              </div>
+              <div className="absolute top-1/4 right-4 animate-bounce delay-200">
+                <div className="text-xs font-mono text-accent/60 bg-accent/10 px-2 py-1 rounded">+23%</div>
+              </div>
+              <div className="absolute bottom-1/3 left-4 animate-pulse delay-500">
+                <div className="text-xs font-mono text-secondary/60 bg-secondary/10 px-2 py-1 rounded">Pattern</div>
+              </div>
+              <div className="absolute bottom-8 right-8 animate-bounce delay-700">
+                <div className="text-xs font-mono text-primary/60 bg-primary/10 px-2 py-1 rounded">Trend↗</div>
+              </div>
+              
+              {/* Main Brain Image */}
               <div className="relative z-10 aspect-square flex items-center justify-center p-8">
-                <img 
-                  src={heroImage.src} 
-                  alt={heroImage.alt} 
-                  className="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute top-8 left-8 animate-bounce">
-                <div className="w-3 h-3 bg-accent rounded-full opacity-60"></div>
-              </div>
-              <div className="absolute top-1/4 right-4 animate-pulse">
-                <div className="w-2 h-2 bg-primary rounded-full opacity-40"></div>
-              </div>
-              <div className="absolute bottom-1/4 left-4 animate-bounce delay-300">
-                <div className="w-4 h-4 bg-secondary rounded-full opacity-50"></div>
+                {isProcessing ? (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+                  </div>
+                ) : (
+                  <img 
+                    src={heroImage.src} 
+                    alt={heroImage.alt} 
+                    className={heroImage.className}
+                  />
+                )}
               </div>
             </div>
           </div>
