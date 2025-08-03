@@ -88,7 +88,7 @@ export function HeroSection() {
                 size="lg" 
                 className="bg-foreground text-background hover:bg-foreground/90 hover:scale-105 px-8 py-3 text-base font-semibold rounded-full min-w-[200px] transition-all duration-200 group"
               >
-                Start Free Trial
+                Start Your Financial Intelligence
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               
@@ -98,7 +98,7 @@ export function HeroSection() {
                 className="border-border/50 bg-background/50 hover:bg-secondary/30 hover:scale-105 px-8 py-3 text-base rounded-full min-w-[200px] group transition-all duration-200"
               >
                 <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                See Demo
+                Watch Intelligence Demo
               </Button>
             </div>
           </div>

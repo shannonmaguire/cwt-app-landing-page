@@ -1,6 +1,7 @@
 import { PortalHeader } from "@/components/portal/PortalHeader";
 import { TestimonialBadge } from "@/components/portal/TestimonialBadge";
 import { HeroSection } from "@/components/portal/HeroSection";
+import { FeatureOverview } from "@/components/portal/FeatureOverview";
 import { AppPreview } from "@/components/portal/AppPreview";
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
       <main>
         <TestimonialBadge />
         <HeroSection />
+        <FeatureOverview />
         <AppPreview />
       </main>
     </div>
