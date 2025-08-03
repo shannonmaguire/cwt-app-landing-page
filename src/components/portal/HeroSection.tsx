@@ -1,8 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import globeImage from "@/assets/globe-hero.jpg";
+import bookImage from "@/assets/book-hero.jpg";
+import brainImage from "@/assets/brain-hero.jpg";
+
+// Change this to switch between hero images: 'globe', 'book', or 'brain'
+const HERO_IMAGE_TYPE: 'globe' | 'book' | 'brain' = 'book';
 
 export function HeroSection() {
+  // Select hero image based on type
+  const getHeroImage = () => {
+    switch (HERO_IMAGE_TYPE) {
+      case 'book':
+        return { src: bookImage, alt: "Open book representing the full financial story", className: "w-full h-full object-contain" };
+      case 'brain':
+        return { src: brainImage, alt: "Brain representing financial intelligence", className: "w-full h-full object-contain" };
+      default:
+        return { src: globeImage, alt: "Earth globe representing global creator economy", className: "w-full h-full object-cover rounded-full" };
+    }
+  };
+
+  const heroImage = getHeroImage();
+
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
@@ -47,12 +66,12 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Globe Image */}
+      {/* Hero Image */}
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] opacity-90">
         <img 
-          src={globeImage} 
-          alt="Earth globe representing global creator economy" 
-          className="w-full h-full object-cover rounded-full"
+          src={heroImage.src} 
+          alt={heroImage.alt} 
+          className={heroImage.className}
         />
       </div>
     </section>
