@@ -25,7 +25,7 @@ const PricingSection = () => {
       name: "Pro",
       price: "$79",
       period: "/month",
-      description: "Financial intelligence for serious creator businesses",
+      description: "Revenue intelligence for serious creator businesses",
       icon: Crown,
       color: "from-accent/20 to-accent/10",
       borderColor: "border-accent/30",
@@ -45,7 +45,7 @@ const PricingSection = () => {
       name: "Agency",
       price: "$199",
       period: "/month",
-      description: "Enterprise intelligence for agencies and multi-creator teams",
+      description: "Enterprise revenue intelligence for agencies and multi-creator teams",
       icon: Rocket,
       color: "from-secondary/20 to-secondary/10",
       borderColor: "border-secondary/30",
@@ -71,11 +71,11 @@ const PricingSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Choose Your{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Intelligence Level
+              Revenue Intelligence Level
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Every plan includes the core financial intelligence features. Scale up as your creator business grows.
+            Every plan includes the core revenue intelligence features. Scale up as your creator business grows.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ const PricingSection = () => {
               30-Day Money-Back Guarantee
             </h3>
             <p className="text-muted-foreground mb-6">
-              If Creator Wealth Tools doesn't reveal hidden revenue opportunities worth more than your subscription cost in the first 30 days, we'll refund every penny. No questions asked.
+              If Wealth Tools doesn't reveal hidden revenue opportunities worth more than your subscription cost in the first 30 days, we'll refund every penny. No questions asked.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">

@@ -46,13 +46,13 @@ const HeroSection = () => {
       case 'brain':
         return {
           src: brainHero,
-          alt: "Financial Intelligence Brain",
+          alt: "Revenue Intelligence Brain",
           className: "w-full h-full object-cover"
         };
       default:
         return {
           src: brainHero,
-          alt: "Creator Wealth Intelligence",
+          alt: "Wealth Tools Revenue Intelligence",
           className: "w-full h-full object-cover"
         };
     }
@@ -82,7 +82,7 @@ const HeroSection = () => {
             {/* Status Badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
               <Brain className="w-4 h-4" />
-              Financial Intelligence Platform
+              Revenue Intelligence Platform
             </div>
 
             {/* Main Headline */}
@@ -125,7 +125,7 @@ const HeroSection = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                Start Your Financial Intelligence
+                Start Your Revenue Intelligence
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
@@ -133,7 +133,7 @@ const HeroSection = () => {
                 size="lg"
                 className="border-2 border-primary/30 text-foreground hover:bg-primary/5 px-8 py-4 rounded-full text-lg font-semibold"
               >
-                Watch Intelligence Demo
+                Watch Revenue Demo
               </Button>
             </div>
 
