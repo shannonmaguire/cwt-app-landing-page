@@ -275,21 +275,21 @@ const FeatureOverview = () => {
     },
     {
       id: 6,
-      title: "Tax-Ready Financial Reports",
-      subtitle: "CPA-approved documentation",
-      description: "Automatically generate detailed financial reports with proper categorization, making tax season effortless for you and your accountant.",
+      title: "Professional Financial Reports",
+      subtitle: "Export-ready documentation",
+      description: "Generate comprehensive financial reports with detailed categorization, perfect for accountants, investors, and business planning.",
       icon: FileSpreadsheet,
       color: "from-secondary to-primary",
       mockup: (
         <div className="bg-background rounded-lg border shadow-lg p-6 w-full max-w-md">
           <div className="flex items-center justify-between mb-6">
-            <h3 className="font-semibold text-foreground">Tax Reports</h3>
+            <h3 className="font-semibold text-foreground">Financial Reports</h3>
             <Button size="sm" variant="outline">Export All</Button>
           </div>
           
           <div className="space-y-4">
             <div className="bg-accent/10 rounded-lg p-4 border border-accent/20">
-              <div className="font-medium text-sm text-foreground mb-2">2024 Tax Summary</div>
+              <div className="font-medium text-sm text-foreground mb-2">2024 Financial Summary</div>
               <div className="grid grid-cols-2 gap-4 text-xs">
                 <div>
                   <div className="text-muted-foreground">Total Revenue</div>
@@ -300,20 +300,20 @@ const FeatureOverview = () => {
                   <div className="font-semibold text-foreground">$124,800</div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground">Net Income</div>
+                  <div className="text-muted-foreground">Net Profit</div>
                   <div className="font-semibold text-accent">$722,500</div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground">Est. Tax Due</div>
-                  <div className="font-semibold text-foreground">$180,625</div>
+                  <div className="text-muted-foreground">Growth Rate</div>
+                  <div className="font-semibold text-foreground">+156%</div>
                 </div>
               </div>
             </div>
 
             <div className="space-y-2">
               {[
-                { name: "1099-NEC Forms", count: "23 clients", status: "Ready" },
-                { name: "Business Expenses", count: "456 entries", status: "Categorized" },
+                { name: "Revenue by Source", count: "8 categories", status: "Complete" },
+                { name: "Expense Breakdown", count: "456 entries", status: "Categorized" },
                 { name: "Quarterly Reports", count: "Q1-Q4", status: "Complete" },
                 { name: "Revenue by Source", count: "8 categories", status: "Detailed" }
               ].map((report, i) => (

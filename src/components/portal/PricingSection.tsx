@@ -35,7 +35,7 @@ const PricingSection = () => {
         "AI-powered revenue insights",
         "Industry benchmarking",
         "Advanced analytics & forecasting",
-        "Tax-ready financial reports",
+        "Professional financial reports",
         "Custom goal milestones",
         "Priority support",
         "API integrations"
