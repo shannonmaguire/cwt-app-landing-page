@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Target, TrendingUp, Users, FileSpreadsheet, BarChart3, DollarSign, Brain, Zap, Shield, ArrowUpRight } from "lucide-react";
 
-// Feature Overview Component - Financial Intelligence Platform
 const FeatureOverview = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
