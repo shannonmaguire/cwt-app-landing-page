@@ -34,6 +34,7 @@ export function PortalHeader() {
           variant="command" 
           size="sm"
           className="bg-gradient-to-r from-primary to-accent text-white hover:from-primary/90 hover:to-accent/90 rounded-full px-6 shadow-lg hover:shadow-xl transition-all duration-300"
+          onClick={() => window.location.href = '/get-started'}
         >
           Get Financial Intelligence →
         </Button>
