@@ -8,6 +8,8 @@ import Footer from "@/components/portal/Footer";
 import Index from "./pages/Index";
 import HowItWorks from "./pages/HowItWorks";
 import Pricing from "./pages/Pricing";
+import Features from "./pages/Features";
+import Security from "./pages/Security";
 import Login from "./pages/Login";
 import GetStarted from "./pages/GetStarted";
 import AccountSetup from "./pages/AccountSetup";
@@ -30,6 +32,8 @@ const App = () => {
                 <Route path="/" element={<Index />} />
                 <Route path="/how-it-works" element={<HowItWorks />} />
                 <Route path="/pricing" element={<Pricing />} />
+                <Route path="/features" element={<Features />} />
+                <Route path="/security" element={<Security />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/get-started" element={<GetStarted />} />
                 <Route path="/account-setup" element={<AccountSetup />} />
