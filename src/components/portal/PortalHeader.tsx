@@ -10,7 +10,7 @@ export function PortalHeader() {
           <Link to="/">
             <img 
               src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
-              alt="Wealth Tools" 
+              alt="creator, wealth tools" 
               className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
             />
           </Link>
@@ -39,7 +39,7 @@ export function PortalHeader() {
           className="bg-gradient-to-r from-primary to-accent text-white hover:from-primary/90 hover:to-accent/90 rounded-full px-6 shadow-lg hover:shadow-xl transition-all duration-300"
           onClick={() => window.location.href = '/get-started'}
         >
-          Start Your Revenue Intelligence →
+          Start Your Financial Intelligence →
         </Button>
       </div>
     </header>

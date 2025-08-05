@@ -18,7 +18,7 @@ export function PersonalizedGreeting() {
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-primary" />
-              <p className="text-sm font-medium text-muted-foreground">Revenue Intelligence</p>
+              <p className="text-sm font-medium text-muted-foreground">Financial Intelligence</p>
             </div>
             <div className="space-y-1">
               <h1 className="text-2xl font-bold">
