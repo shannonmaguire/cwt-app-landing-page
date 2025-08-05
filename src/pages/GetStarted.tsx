@@ -240,14 +240,19 @@ const GetStarted = () => {
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                   ) : (
-                    <Button
-                      onClick={handleSubmit}
-                      disabled={!formData.monthlyRevenue}
-                      className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8"
-                    >
-                      Get My Financial Intelligence
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                  <Button
+                    onClick={() => {
+                      // Store user data (in real app, this would save to Supabase)
+                      localStorage.setItem('onboardingData', JSON.stringify(formData));
+                      // Redirect to account setup
+                      window.location.href = '/account-setup';
+                    }}
+                    disabled={!formData.monthlyRevenue}
+                    className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8"
+                  >
+                    Get My Financial Intelligence
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
                   )}
                 </div>
               </div>
