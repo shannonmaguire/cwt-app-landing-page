@@ -94,6 +94,9 @@ const TestimonialSection = () => {
                     src={testimonials[activeTestimonial].image}
                     alt={testimonials[activeTestimonial].name}
                     className="w-24 h-24 rounded-full object-cover border-4 border-primary/20"
+                    onError={(e) => {
+                      e.currentTarget.src = 'https://via.placeholder.com/96x96/6366f1/ffffff?text=' + testimonials[activeTestimonial].name.split(' ').map(n => n[0]).join('');
+                    }}
                   />
                   <div className="absolute -bottom-2 -right-2 bg-accent text-white text-xs font-bold px-2 py-1 rounded-full">
                     ✓ Verified
