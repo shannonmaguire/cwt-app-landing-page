@@ -8,11 +8,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img 
-                src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
-                alt="Creator Wealth Tools" 
-                className="h-8 w-auto"
-              />
+              <Link to="/">
+                <img 
+                  src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
+                  alt="Creator Wealth Tools" 
+                  className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                />
+              </Link>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               AI-powered financial insights that help creators make smarter money decisions and optimize their financial future.

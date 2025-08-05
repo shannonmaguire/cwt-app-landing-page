@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function PortalHeader() {
   return (
@@ -6,11 +7,13 @@ export function PortalHeader() {
       <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <img 
-            src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
-            alt="Creator Wealth Tools" 
-            className="h-8 w-auto"
-          />
+          <Link to="/">
+            <img 
+              src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
+              alt="Creator Wealth Tools" 
+              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+            />
+          </Link>
         </div>
 
         {/* Navigation */}
