@@ -5,11 +5,12 @@ export function PortalHeader() {
     <header className="border-b border-border/30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-foreground rounded-lg flex items-center justify-center">
-            <span className="text-background font-bold text-lg">C</span>
-          </div>
-          <span className="font-semibold text-lg text-foreground">Creator Wealth Tools</span>
+        <div className="flex items-center gap-3">
+          <img 
+            src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
+            alt="Creator Wealth Tools" 
+            className="h-8 w-auto"
+          />
         </div>
 
         {/* Navigation */}
