@@ -21,10 +21,10 @@ export function PortalHeader() {
           <a href="/how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             How It Works
           </a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Pricing
           </a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/login" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Login
           </a>
         </nav>
