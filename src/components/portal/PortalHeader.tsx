@@ -22,9 +22,6 @@ export function PortalHeader() {
             How It Works
           </a>
           <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            Intelligence Demo
-          </a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Pricing
           </a>
           <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
