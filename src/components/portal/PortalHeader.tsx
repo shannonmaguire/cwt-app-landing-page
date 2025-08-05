@@ -19,7 +19,10 @@ export function PortalHeader() {
             About
           </a>
           <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            The System
+            How It Works
+          </a>
+          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            Intelligence Demo
           </a>
           <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Pricing
@@ -33,9 +36,9 @@ export function PortalHeader() {
         <Button 
           variant="command" 
           size="sm"
-          className="bg-[#e31e54] text-white hover:bg-[#e31e54]/90 rounded-full px-6"
+          className="bg-gradient-to-r from-primary to-accent text-white hover:from-primary/90 hover:to-accent/90 rounded-full px-6 shadow-lg hover:shadow-xl transition-all duration-300"
         >
-          Get Started →
+          Get Financial Intelligence →
         </Button>
       </div>
     </header>
