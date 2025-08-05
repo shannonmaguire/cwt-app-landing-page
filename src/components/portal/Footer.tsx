@@ -70,24 +70,24 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Support</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/help" className="text-muted-foreground hover:text-primary transition-colors">
                   Help Center
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/api-docs" className="text-muted-foreground hover:text-primary transition-colors">
                   API Documentation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/status" className="text-muted-foreground hover:text-primary transition-colors">
                   Status Page
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

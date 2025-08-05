@@ -10,6 +10,10 @@ import HowItWorks from "./pages/HowItWorks";
 import Pricing from "./pages/Pricing";
 import Features from "./pages/Features";
 import Security from "./pages/Security";
+import HelpCenter from "./pages/HelpCenter";
+import Contact from "./pages/Contact";
+import APIDocumentation from "./pages/APIDocumentation";
+import Status from "./pages/Status";
 import Login from "./pages/Login";
 import GetStarted from "./pages/GetStarted";
 import AccountSetup from "./pages/AccountSetup";
@@ -34,6 +38,10 @@ const App = () => {
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/features" element={<Features />} />
                 <Route path="/security" element={<Security />} />
+                <Route path="/help" element={<HelpCenter />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/api-docs" element={<APIDocumentation />} />
+                <Route path="/status" element={<Status />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/get-started" element={<GetStarted />} />
                 <Route path="/account-setup" element={<AccountSetup />} />
