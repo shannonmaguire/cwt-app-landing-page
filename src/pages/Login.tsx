@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { PortalHeader } from "@/components/portal/PortalHeader";
 import { ArrowRight, Brain, Eye, EyeOff, Mail, Lock, ArrowLeft } from "lucide-react";
 
 const Login = () => {
@@ -20,11 +19,8 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <PortalHeader />
-      
-      <main className="flex items-center justify-center py-20">
-        <div className="w-full max-w-md">
+    <div className="flex items-center justify-center py-20">
+      <div className="w-full max-w-md">
           {/* Back to Home */}
           <div className="mb-8">
             <Button 
@@ -258,7 +254,6 @@ const Login = () => {
             </p>
           </div>
         </div>
-      </main>
     </div>
   );
 };

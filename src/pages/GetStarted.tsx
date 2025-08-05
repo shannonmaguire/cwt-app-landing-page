@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { PortalHeader } from "@/components/portal/PortalHeader";
 import { ArrowRight, Brain, Zap, Target, Users, Check, Star, TrendingUp, DollarSign, Shield } from "lucide-react";
 
 const GetStarted = () => {
@@ -46,12 +45,9 @@ const GetStarted = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <PortalHeader />
-      
-      <main>
-        {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-background via-background to-muted/20">
+    <div>
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-br from-background via-background to-muted/20">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: `
@@ -331,7 +327,6 @@ const GetStarted = () => {
             </div>
           </div>
         </section>
-      </main>
     </div>
   );
 };

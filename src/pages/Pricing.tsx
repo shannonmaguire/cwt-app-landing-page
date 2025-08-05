@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { PortalHeader } from "@/components/portal/PortalHeader";
 import { Check, Zap, Crown, Rocket, ArrowRight, Star } from "lucide-react";
 
 const Pricing = () => {
@@ -88,12 +87,9 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <PortalHeader />
-      
-      <main>
-        {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-background via-background to-muted/20">
+    <div>
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-br from-background via-background to-muted/20">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: `
@@ -286,7 +282,6 @@ const Pricing = () => {
             </p>
           </div>
         </section>
-      </main>
     </div>
   );
 };

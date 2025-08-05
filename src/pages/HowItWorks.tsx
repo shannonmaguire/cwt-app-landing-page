@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { PortalHeader } from "@/components/portal/PortalHeader";
 import { ArrowRight, Brain, Zap, Target, BarChart3, Users, FileSpreadsheet, TrendingUp, DollarSign, Shield, ArrowUpRight, Check } from "lucide-react";
 
 const HowItWorks = () => {
@@ -211,12 +210,9 @@ const HowItWorks = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <PortalHeader />
-      
-      <main>
-        {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-background via-background to-muted/20">
+    <div>
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-br from-background via-background to-muted/20">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: `
@@ -389,7 +385,6 @@ const HowItWorks = () => {
             </p>
           </div>
         </section>
-      </main>
     </div>
   );
 };
