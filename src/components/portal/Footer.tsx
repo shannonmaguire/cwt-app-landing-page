@@ -8,10 +8,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold text-foreground mb-4">
-              Financial Intelligence
+              Creator Wealth Tools
             </h3>
             <p className="text-muted-foreground mb-4 max-w-md">
-              AI-powered financial insights that help you make smarter money decisions and optimize your financial future.
+              AI-powered financial insights that help creators make smarter money decisions and optimize their financial future.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -90,7 +90,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2024 Financial Intelligence. All rights reserved.
+            © 2024 Creator Wealth Tools. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
