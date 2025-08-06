@@ -46,13 +46,13 @@ const HeroSection = () => {
       case 'brain':
         return {
           src: brainHero,
-          alt: "Revenue Intelligence Brain",
+          alt: "Wintle financial intelligence visualization representing pattern recognition in creator income",
           className: "w-full h-full object-cover"
         };
       default:
         return {
           src: brainHero,
-          alt: "Wealth Tools Revenue Intelligence",
+          alt: "Wintle financial intelligence platform visualization",
           className: "w-full h-full object-cover"
         };
     }
@@ -81,36 +81,36 @@ const HeroSection = () => {
           <div className="space-y-8 animate-fade-in">
             {/* Status Badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
-              <Brain className="w-4 h-4" />
-              Revenue Intelligence Platform
+              <Brain className="w-4 h-4" aria-hidden="true" />
+              Financial Intelligence Platform
             </div>
 
             {/* Main Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-foreground">
-                You need the{" "}
-                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
-                  full story
+                Your income deserves{" "}
+                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+                  clarity
                 </span>
               </h1>
               <div className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-                Most creators know the <em>brand</em>, the <em>collab</em>, the PayPal balance. 
+                Wintle helps modern creators understand the patterns in their creative income. 
                 <br />
-                <strong className="text-foreground">But they don't know the pattern, the signal, the true insight.</strong>
+                <strong className="text-foreground">See your financial flows with confidence and clarity.</strong>
               </div>
             </div>
 
             {/* Value Props */}
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: TrendingUp, text: "Revenue Intelligence", desc: "Spot patterns in your income streams" },
-                { icon: DollarSign, text: "Total Clarity", desc: "Every dollar tracked & categorized" },
-                { icon: Brain, text: "Smart Insights", desc: "AI-powered financial analysis" },
-                { icon: Zap, text: "Real-time Data", desc: "Live updates from all platforms" }
+                { icon: TrendingUp, text: "Income Patterns", desc: "See signals in your creative revenue" },
+                { icon: DollarSign, text: "Complete Clarity", desc: "Understand every income flow" },
+                { icon: Brain, text: "Financial Intelligence", desc: "Insights that make sense" },
+                { icon: Zap, text: "Real-time Visibility", desc: "Current view of all platforms" }
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-muted/30 border border-border/50 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-muted/30 border border-border/50 hover:bg-muted/50 transition-all duration-300 hover:scale-105 focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2">
                   <div className="p-2 rounded-lg bg-primary/10">
-                    <item.icon className="w-4 h-4 text-primary" />
+                    <item.icon className="w-4 h-4 text-primary" aria-hidden="true" />
                   </div>
                   <div>
                     <div className="font-semibold text-sm text-foreground">{item.text}</div>
@@ -123,23 +123,26 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+                className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                onClick={() => window.location.href = '/get-started'}
+                aria-label="Start seeing clearly with Wintle"
               >
-                Start Your Revenue Intelligence
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                Start Seeing Clearly
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-primary/30 text-foreground hover:bg-primary/5 px-8 py-4 rounded-full text-lg font-semibold"
+                className="border-2 border-primary/30 text-foreground hover:bg-primary/5 px-8 py-4 rounded-full text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                onClick={() => document.querySelector('#how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Watch Revenue Demo
+                Learn More
               </Button>
             </div>
 
             {/* Social Proof */}
             <div className="text-sm text-muted-foreground">
-              Trusted by <strong className="text-foreground">2,000+</strong> creators tracking over <strong className="text-foreground">$50M</strong> in revenue
+              Trusted by <strong className="text-foreground">2,000+</strong> creators who've found clarity in over <strong className="text-foreground">$50M</strong> of creative income
             </div>
           </div>
 
@@ -163,7 +166,7 @@ const HeroSection = () => {
                 <div className="bg-card/80 backdrop-blur border border-border/50 rounded-xl p-4 shadow-lg">
                   <div className="text-xs text-muted-foreground mb-1">UGC Streams</div>
                   <div className="text-lg font-bold text-foreground">8 Active</div>
-                  <div className="text-xs text-accent">All tracked automatically</div>
+                  <div className="text-xs text-accent">All visible clearly</div>
                 </div>
               </div>
 

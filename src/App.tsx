@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { PortalHeader } from "@/components/portal/PortalHeader";
 import Footer from "@/components/portal/Footer";
+import CookieBanner from "@/components/portal/CookieBanner";
 import Index from "./pages/Index";
 import HowItWorks from "./pages/HowItWorks";
 import Pricing from "./pages/Pricing";
@@ -51,6 +52,7 @@ const App = () => {
               </Routes>
             </main>
             <Footer />
+            <CookieBanner />
           </div>
         </BrowserRouter>
       </TooltipProvider>

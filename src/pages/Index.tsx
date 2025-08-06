@@ -1,5 +1,7 @@
 import { TestimonialBadge } from "@/components/portal/TestimonialBadge";
 import HeroSection from "@/components/portal/HeroSection";
+import FeaturesSection from "@/components/portal/FeaturesSection";
+import HowItWorksSection from "@/components/portal/HowItWorksSection";
 import FeatureOverview from "@/components/portal/FeatureOverview";
 import { AppPreview } from "@/components/portal/AppPreview";
 import TestimonialSection from "@/components/portal/TestimonialSection";
@@ -11,6 +13,8 @@ const Index = () => {
     <div>
       <TestimonialBadge />
       <HeroSection />
+      <FeaturesSection />
+      <HowItWorksSection />
       <FeatureOverview />
       <AppPreview />
       <TestimonialSection />

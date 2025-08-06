@@ -7,13 +7,13 @@ const PricingSection = () => {
       name: "Creator",
       price: "$29",
       period: "/month",
-      description: "Perfect for creators who want complete financial clarity",
+      description: "Perfect for creators ready to see their income clearly",
       icon: Zap,
       color: "from-primary/10 to-primary/5",
       borderColor: "border-primary/20",
       popular: false,
       features: [
-        "Track unlimited revenue streams",
+        "See unlimited income streams",
         "Smart expense categorization",
         "Basic goal setting & tracking",
         "Monthly financial reports",
@@ -25,14 +25,14 @@ const PricingSection = () => {
       name: "Pro",
       price: "$79",
       period: "/month",
-      description: "Revenue intelligence for serious creator businesses",
+      description: "Financial intelligence for serious creator businesses",
       icon: Crown,
       color: "from-accent/20 to-accent/10",
       borderColor: "border-accent/30",
       popular: true,
       features: [
         "Everything in Creator",
-        "AI-powered revenue insights",
+        "Financial intelligence insights",
         "Industry benchmarking",
         "Advanced analytics & forecasting",
         "Professional financial reports",
@@ -45,7 +45,7 @@ const PricingSection = () => {
       name: "Agency",
       price: "$199",
       period: "/month",
-      description: "Enterprise revenue intelligence for agencies and multi-creator teams",
+      description: "Enterprise financial intelligence for agencies and multi-creator teams",
       icon: Rocket,
       color: "from-secondary/20 to-secondary/10",
       borderColor: "border-secondary/30",
@@ -71,11 +71,11 @@ const PricingSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Choose Your{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Revenue Intelligence Level
+              Clarity Level
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Every plan includes the core revenue intelligence features. Scale up as your creator business grows.
+            Every plan includes core financial intelligence. Scale up as your creative business grows.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ const PricingSection = () => {
               30-Day Money-Back Guarantee
             </h3>
             <p className="text-muted-foreground mb-6">
-              If Wealth Tools doesn't reveal hidden revenue opportunities worth more than your subscription cost in the first 30 days, we'll refund every penny. No questions asked.
+              If Wintle doesn't reveal income insights worth more than your subscription cost in the first 30 days, we'll refund every penny. No questions asked.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -172,13 +172,15 @@ const PricingSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-muted-foreground mb-6">
-            Ready to unlock your revenue intelligence?
+            Ready to see your creative income with clarity?
           </p>
           <Button
             size="lg"
-            className="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            onClick={() => window.location.href = '/get-started'}
+            aria-label="Start your free trial with Wintle"
           >
-            Start Your 30-Day Free Trial
+            Start Seeing Clearly - Free Trial
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           <p className="text-sm text-muted-foreground mt-4">

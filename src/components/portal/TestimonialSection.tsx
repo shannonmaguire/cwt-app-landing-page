@@ -10,7 +10,7 @@ const TestimonialSection = () => {
       followers: "2.3M",
       revenue: "$180K/month",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b9c1?w=400",
-      quote: "Wealth Tools showed me I was leaving $40K on the table every month. The pattern recognition is incredible – it spotted trends in my brand deals that I never would have noticed.",
+      quote: "Wintle showed me I was leaving $40K on the table every month. The financial intelligence is incredible – it helped me see patterns in my brand deals that I never would have noticed.",
       metrics: {
         growth: "+156%",
         streams: "12 active",
@@ -24,7 +24,7 @@ const TestimonialSection = () => {
       followers: "1.8M",
       revenue: "$240K/month",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
-      quote: "I thought I knew my finances. Turns out I was completely wrong. Wealth Tools revealed seasonal patterns, optimal pricing windows, and hidden revenue opportunities. Game changer.",
+      quote: "I thought I knew my finances. Turns out I was completely wrong. Wintle revealed seasonal patterns, optimal pricing windows, and hidden revenue opportunities. Complete clarity.",
       metrics: {
         growth: "+203%",
         streams: "8 active",
@@ -38,7 +38,7 @@ const TestimonialSection = () => {
       followers: "3.1M",
       revenue: "$320K/month",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
-      quote: "The AI insights are scary accurate. It predicted my Q4 brand deal surge three months early. Now I plan my entire business strategy around Wealth Tools forecasts.",
+      quote: "The financial intelligence is remarkably accurate. Wintle predicted my Q4 brand deal surge three months early. Now I plan my entire business strategy around these insights.",
       metrics: {
         growth: "+89%",
         streams: "15 active",
@@ -61,7 +61,7 @@ const TestimonialSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join thousands of creators who transformed financial chaos into crystal-clear intelligence
+            Join thousands of creators who've found clarity in their creative income with Wintle
           </p>
         </div>
 
@@ -143,7 +143,7 @@ const TestimonialSection = () => {
                     <div className="text-2xl font-bold text-secondary">
                       {testimonials[activeTestimonial].metrics.timeframe}
                     </div>
-                    <div className="text-xs text-muted-foreground">Using Wealth Tools</div>
+                    <div className="text-xs text-muted-foreground">Using Wintle</div>
                   </div>
                 </div>
 
@@ -179,10 +179,14 @@ const TestimonialSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-muted-foreground mb-6">
-            Ready to discover what your revenue is really telling you?
+            Ready to see your creative income with clarity?
           </p>
-          <button className="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-            Start Your Revenue Intelligence
+          <button 
+            className="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            onClick={() => window.location.href = '/get-started'}
+            aria-label="Start seeing clearly with Wintle"
+          >
+            Start Seeing Clearly
           </button>
         </div>
       </div>

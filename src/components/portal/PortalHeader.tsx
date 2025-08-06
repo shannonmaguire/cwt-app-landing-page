@@ -10,24 +10,24 @@ export function PortalHeader() {
           <Link to="/">
             <img 
               src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
-              alt="Wealth Tools" 
-              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+              alt="Wintle - Financial intelligence for creators" 
+              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             />
           </Link>
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            About
+        <nav className="hidden md:flex items-center gap-8" role="navigation" aria-label="Main navigation">
+          <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1">
+            Features
           </a>
-          <a href="/how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1">
             How It Works
           </a>
-          <a href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1">
             Pricing
           </a>
-          <a href="/login" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/login" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1">
             Login
           </a>
         </nav>
@@ -36,10 +36,11 @@ export function PortalHeader() {
         <Button 
           variant="command" 
           size="sm"
-          className="bg-gradient-to-r from-primary to-accent text-white hover:from-primary/90 hover:to-accent/90 rounded-full px-6 shadow-lg hover:shadow-xl transition-all duration-300"
+          className="bg-gradient-to-r from-primary to-accent text-white hover:from-primary/90 hover:to-accent/90 rounded-full px-6 shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           onClick={() => window.location.href = '/get-started'}
+          aria-label="Start seeing clearly with Wintle"
         >
-          Start Your Revenue Intelligence →
+          Start Seeing Clearly
         </Button>
       </div>
     </header>

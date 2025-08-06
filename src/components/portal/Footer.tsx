@@ -11,13 +11,13 @@ const Footer = () => {
               <Link to="/">
                 <img 
                   src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
-                  alt="Wealth Tools" 
-                  className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                  alt="Wintle - Financial intelligence for creators" 
+                  className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 />
               </Link>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Financial intelligence platform that helps creators track revenue, analyze patterns, and optimize their earnings with complete visibility into your business finances.
+              Wintle is a financial intelligence platform built for modern creators who want to understand, manage, and grow their income with clarity.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -96,16 +96,25 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2024 Wealth Tools. All rights reserved.
+            © 2024 Wintle. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a 
+              href="/privacy" 
+              className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a 
+              href="/terms" 
+              className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1"
+            >
               Terms of Service
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a 
+              href="/cookies" 
+              className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1"
+            >
               Cookie Policy
             </a>
           </div>
