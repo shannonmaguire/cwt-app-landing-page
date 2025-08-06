@@ -7,15 +7,15 @@ const PricingSection = () => {
       name: "Creator",
       price: "$29",
       period: "/month",
-      description: "Perfect for creators ready to level up their money game",
+      description: "Perfect for creators ready to see their income clearly",
       icon: Zap,
       color: "from-primary/10 to-primary/5",
       borderColor: "border-primary/20",
       popular: false,
       features: [
-        "Track unlimited revenue streams",
-        "Smart expense categorization",
-        "Basic goal setting & tracking",
+        "See unlimited income sources",
+        "Intelligent expense understanding",
+        "Goal clarity & progress",
         "Monthly financial reports",
         "Mobile app access",
         "Email support"
@@ -25,27 +25,27 @@ const PricingSection = () => {
       name: "Pro",
       price: "$79",
       period: "/month",
-      description: "For creators building serious wealth and scaling fast",
+      description: "For creators growing with confidence and clear direction",
       icon: Crown,
       color: "from-accent/20 to-accent/10",
       borderColor: "border-accent/30",
       popular: true,
       features: [
         "Everything in Creator",
-        "AI-powered revenue insights",
+        "Intelligent income insights",
         "Industry benchmarking",
-        "Advanced analytics & forecasting",
+        "Deep patterns & signals",
         "Professional financial reports",
         "Custom goal milestones",
         "Priority support",
-        "API integrations"
+        "Platform connections"
       ]
     },
     {
       name: "Agency",
       price: "$199",
       period: "/month",
-      description: "For agencies and multi-creator teams going big",
+      description: "For agencies and teams managing multiple creative incomes",
       icon: Rocket,
       color: "from-secondary/20 to-secondary/10",
       borderColor: "border-secondary/30",
@@ -71,11 +71,11 @@ const PricingSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Choose Your{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Creator Money Intelligence
+              Clarity Level
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Every plan gets you the creator financial intelligence you need. Scale up as you grow bigger.
+            Every plan brings you the financial intelligence you need. Grow with confidence as you scale.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ const PricingSection = () => {
               30-Day Money-Back Guarantee
             </h3>
             <p className="text-muted-foreground mb-6">
-              If Creator Wealth Tools doesn't reveal hidden revenue opportunities worth more than your subscription cost in the first 30 days, we'll refund every penny. No questions asked.
+              If Wintle doesn't bring clarity worth more than your subscription in the first 30 days, we'll refund every penny. No questions asked.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -172,7 +172,7 @@ const PricingSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-muted-foreground mb-6">
-            Ready to finally know what you're really worth?
+            Ready to see your creative income with complete clarity?
           </p>
           <Button
             size="lg"

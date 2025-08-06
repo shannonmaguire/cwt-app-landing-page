@@ -50,11 +50,11 @@ const HeroSection = () => {
           className: "w-full h-full object-cover"
         };
       default:
-        return {
-          src: brainHero,
-          alt: "Creator Wealth Tools Financial Intelligence",
-          className: "w-full h-full object-cover"
-        };
+          return {
+            src: brainHero,
+            alt: "Wintle Financial Intelligence",
+            className: "w-full h-full object-cover"
+          };
     }
   };
 
@@ -88,25 +88,25 @@ const HeroSection = () => {
             {/* Main Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-foreground">
-                You need the{" "}
+                See the{" "}
                 <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
-                  full story
+                  patterns
                 </span>
               </h1>
               <div className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-                Most creators know the <em>brand deal</em>, the <em>collab rate</em>, the PayPal notification. 
+                You know your rates, your deals, your payouts. 
                 <br />
-                <strong className="text-foreground">But they don't know the patterns, the signals, the real money moves.</strong>
+                <strong className="text-foreground">Wintle shows you the signals underneath—what flows, what grows, what matters.</strong>
               </div>
             </div>
 
             {/* Value Props */}
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: TrendingUp, text: "Revenue Intelligence", desc: "See which content actually pays" },
-                { icon: DollarSign, text: "Total Money Clarity", desc: "Every dollar from every platform, tracked" },
-                { icon: Brain, text: "Creator-Smart Insights", desc: "AI that gets the creator economy" },
-                { icon: Zap, text: "Real-time Updates", desc: "Live data from all your platforms" }
+                { icon: TrendingUp, text: "Revenue Visibility", desc: "See which content brings clarity" },
+                { icon: DollarSign, text: "Complete Income View", desc: "Every source, every flow, understood" },
+                { icon: Brain, text: "Creative Intelligence", desc: "Insights that think like you do" },
+                { icon: Zap, text: "Living Data", desc: "Your income view, always current" }
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-muted/30 border border-border/50 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
                   <div className="p-2 rounded-lg bg-primary/10">
@@ -125,7 +125,7 @@ const HeroSection = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                Get My Creator Financial Intelligence
+                Start Seeing Clearly
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
@@ -133,13 +133,13 @@ const HeroSection = () => {
                 size="lg"
                 className="border-2 border-primary/30 text-foreground hover:bg-primary/5 px-8 py-4 rounded-full text-lg font-semibold"
               >
-                See How Creators Use This
+                How Wintle Works
               </Button>
             </div>
 
             {/* Social Proof */}
             <div className="text-sm text-muted-foreground">
-              Trusted by <strong className="text-foreground">2,000+</strong> creators who've tracked over <strong className="text-foreground">$50M</strong> in brand deals, sponsorships & revenue
+              Trusted by <strong className="text-foreground">2,000+</strong> creators who found clarity in over <strong className="text-foreground">$50M</strong> of creative income
             </div>
           </div>
 
