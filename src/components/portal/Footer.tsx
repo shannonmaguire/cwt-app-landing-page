@@ -17,7 +17,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Financial intelligence platform for creators. Track revenue, analyze patterns, and optimize your earnings with complete visibility into your business finances.
+              The financial intelligence platform built specifically for creators. Finally understand what your content is really worth.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

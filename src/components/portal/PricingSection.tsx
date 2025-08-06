@@ -7,7 +7,7 @@ const PricingSection = () => {
       name: "Creator",
       price: "$29",
       period: "/month",
-      description: "Perfect for creators who want complete financial clarity",
+      description: "Perfect for creators ready to level up their money game",
       icon: Zap,
       color: "from-primary/10 to-primary/5",
       borderColor: "border-primary/20",
@@ -25,7 +25,7 @@ const PricingSection = () => {
       name: "Pro",
       price: "$79",
       period: "/month",
-      description: "Revenue intelligence for serious creator businesses",
+      description: "For creators building serious wealth and scaling fast",
       icon: Crown,
       color: "from-accent/20 to-accent/10",
       borderColor: "border-accent/30",
@@ -45,7 +45,7 @@ const PricingSection = () => {
       name: "Agency",
       price: "$199",
       period: "/month",
-      description: "Enterprise revenue intelligence for agencies and multi-creator teams",
+      description: "For agencies and multi-creator teams going big",
       icon: Rocket,
       color: "from-secondary/20 to-secondary/10",
       borderColor: "border-secondary/30",
@@ -71,11 +71,11 @@ const PricingSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Choose Your{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Revenue Intelligence Level
+              Creator Money Intelligence
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Every plan includes the core revenue intelligence features. Scale up as your creator business grows.
+            Every plan gets you the creator financial intelligence you need. Scale up as you grow bigger.
           </p>
         </div>
 
@@ -172,7 +172,7 @@ const PricingSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-muted-foreground mb-6">
-            Ready to unlock your revenue intelligence?
+            Ready to finally know what you're really worth?
           </p>
           <Button
             size="lg"
