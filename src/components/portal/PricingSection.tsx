@@ -146,7 +146,7 @@ const PricingSection = () => {
               30-Day Money-Back Guarantee
             </h3>
             <p className="text-muted-foreground mb-6">
-              If Wealth Tools doesn't reveal hidden revenue opportunities worth more than your subscription cost in the first 30 days, we'll refund every penny. No questions asked.
+              If Creator Wealth Tools doesn't reveal hidden revenue opportunities worth more than your subscription cost in the first 30 days, we'll refund every penny. No questions asked.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">

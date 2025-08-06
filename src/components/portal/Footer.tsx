@@ -11,7 +11,7 @@ const Footer = () => {
               <Link to="/">
                 <img 
                   src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
-                  alt="creator, wealth tools" 
+                  alt="Creator Wealth Tools" 
                   className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
                 />
               </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2024 creator, wealth tools. All rights reserved.
+            © 2024 Creator Wealth Tools. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

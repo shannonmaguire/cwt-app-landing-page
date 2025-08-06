@@ -10,7 +10,7 @@ export function PortalHeader() {
           <Link to="/">
             <img 
               src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
-              alt="creator, wealth tools" 
+              alt="Creator Wealth Tools" 
               className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
             />
           </Link>

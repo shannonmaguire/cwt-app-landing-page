@@ -52,7 +52,7 @@ const HeroSection = () => {
       default:
         return {
           src: brainHero,
-          alt: "creator, wealth tools Financial Intelligence",
+          alt: "Creator Wealth Tools Financial Intelligence",
           className: "w-full h-full object-cover"
         };
     }

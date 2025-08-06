@@ -10,7 +10,7 @@ const TestimonialSection = () => {
       followers: "2.3M",
       revenue: "$180K/month",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b9c1?w=400",
-      quote: "Wealth Tools showed me I was leaving $40K on the table every month. The pattern recognition is incredible – it spotted trends in my brand deals that I never would have noticed.",
+      quote: "Creator Wealth Tools showed me I was leaving $40K on the table every month. The pattern recognition is incredible – it spotted trends in my brand deals that I never would have noticed.",
       metrics: {
         growth: "+156%",
         streams: "12 active",
@@ -24,7 +24,7 @@ const TestimonialSection = () => {
       followers: "1.8M",
       revenue: "$240K/month",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
-      quote: "I thought I knew my finances. Turns out I was completely wrong. Wealth Tools revealed seasonal patterns, optimal pricing windows, and hidden revenue opportunities. Game changer.",
+      quote: "I thought I knew my finances. Turns out I was completely wrong. Creator Wealth Tools revealed seasonal patterns, optimal pricing windows, and hidden revenue opportunities. Game changer.",
       metrics: {
         growth: "+203%",
         streams: "8 active",
@@ -38,7 +38,7 @@ const TestimonialSection = () => {
       followers: "3.1M",
       revenue: "$320K/month",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
-      quote: "The AI insights are scary accurate. It predicted my Q4 brand deal surge three months early. Now I plan my entire business strategy around Wealth Tools forecasts.",
+      quote: "The AI insights are scary accurate. It predicted my Q4 brand deal surge three months early. Now I plan my entire business strategy around Creator Wealth Tools forecasts.",
       metrics: {
         growth: "+89%",
         streams: "15 active",
@@ -143,7 +143,7 @@ const TestimonialSection = () => {
                     <div className="text-2xl font-bold text-secondary">
                       {testimonials[activeTestimonial].metrics.timeframe}
                     </div>
-                    <div className="text-xs text-muted-foreground">Using Wealth Tools</div>
+                    <div className="text-xs text-muted-foreground">Using Creator Wealth Tools</div>
                   </div>
                 </div>
 
