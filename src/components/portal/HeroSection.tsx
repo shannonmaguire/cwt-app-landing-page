@@ -46,13 +46,13 @@ const HeroSection = () => {
       case 'brain':
         return {
           src: brainHero,
-          alt: "Financial Intelligence Brain",
+          alt: "Revenue Intelligence Brain",
           className: "w-full h-full object-cover"
         };
       default:
         return {
           src: brainHero,
-          alt: "Creator Wealth Tools Financial Intelligence",
+          alt: "Wealth Tools Revenue Intelligence",
           className: "w-full h-full object-cover"
         };
     }
@@ -82,7 +82,7 @@ const HeroSection = () => {
             {/* Status Badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
               <Brain className="w-4 h-4" />
-              Financial Intelligence Platform
+              Revenue Intelligence Platform
             </div>
 
             {/* Main Headline */}
@@ -94,19 +94,19 @@ const HeroSection = () => {
                 </span>
               </h1>
               <div className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-                Most creators know the <em>brand deal</em>, the <em>collab rate</em>, the PayPal notification. 
+                Most creators know the <em>brand</em>, the <em>collab</em>, the PayPal balance. 
                 <br />
-                <strong className="text-foreground">But they don't know the patterns, the signals, the real money moves.</strong>
+                <strong className="text-foreground">But they don't know the pattern, the signal, the true insight.</strong>
               </div>
             </div>
 
             {/* Value Props */}
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: TrendingUp, text: "Revenue Intelligence", desc: "See which content actually pays" },
-                { icon: DollarSign, text: "Total Money Clarity", desc: "Every dollar from every platform, tracked" },
-                { icon: Brain, text: "Creator-Smart Insights", desc: "AI that gets the creator economy" },
-                { icon: Zap, text: "Real-time Updates", desc: "Live data from all your platforms" }
+                { icon: TrendingUp, text: "Revenue Intelligence", desc: "Spot patterns in your income streams" },
+                { icon: DollarSign, text: "Total Clarity", desc: "Every dollar tracked & categorized" },
+                { icon: Brain, text: "Smart Insights", desc: "AI-powered financial analysis" },
+                { icon: Zap, text: "Real-time Data", desc: "Live updates from all platforms" }
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-muted/30 border border-border/50 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
                   <div className="p-2 rounded-lg bg-primary/10">
@@ -125,7 +125,7 @@ const HeroSection = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                Get My Creator Financial Intelligence
+                Start Your Revenue Intelligence
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
@@ -133,13 +133,13 @@ const HeroSection = () => {
                 size="lg"
                 className="border-2 border-primary/30 text-foreground hover:bg-primary/5 px-8 py-4 rounded-full text-lg font-semibold"
               >
-                See How Creators Use This
+                Watch Revenue Demo
               </Button>
             </div>
 
             {/* Social Proof */}
             <div className="text-sm text-muted-foreground">
-              Trusted by <strong className="text-foreground">2,000+</strong> creators who've tracked over <strong className="text-foreground">$50M</strong> in brand deals, sponsorships & revenue
+              Trusted by <strong className="text-foreground">2,000+</strong> creators tracking over <strong className="text-foreground">$50M</strong> in revenue
             </div>
           </div>
 
@@ -150,20 +150,20 @@ const HeroSection = () => {
               {/* Floating Intelligence Cards */}
               <div className="absolute -top-8 -left-8 z-20 animate-fade-in" style={{ animationDelay: '0.5s' }}>
                 <div className="bg-card/80 backdrop-blur border border-border/50 rounded-xl p-4 shadow-lg">
-                  <div className="text-xs text-muted-foreground mb-1">This Month's Brand Deals</div>
+                  <div className="text-xs text-muted-foreground mb-1">Brand Deal Revenue</div>
                   <div className="text-lg font-bold text-foreground">$12,400</div>
                   <div className="text-xs text-accent flex items-center gap-1">
                     <TrendingUp className="w-3 h-3" />
-                    +23% vs last month
+                    +23% this month
                   </div>
                 </div>
               </div>
 
               <div className="absolute -top-4 -right-12 z-20 animate-fade-in" style={{ animationDelay: '1s' }}>
                 <div className="bg-card/80 backdrop-blur border border-border/50 rounded-xl p-4 shadow-lg">
-                  <div className="text-xs text-muted-foreground mb-1">Active Revenue Streams</div>
-                  <div className="text-lg font-bold text-foreground">8 platforms</div>
-                  <div className="text-xs text-accent">All synced automatically</div>
+                  <div className="text-xs text-muted-foreground mb-1">UGC Streams</div>
+                  <div className="text-lg font-bold text-foreground">8 Active</div>
+                  <div className="text-xs text-accent">All tracked automatically</div>
                 </div>
               </div>
 
@@ -179,9 +179,9 @@ const HeroSection = () => {
 
               <div className="absolute -bottom-4 -left-8 z-20 animate-fade-in" style={{ animationDelay: '2s' }}>
                 <div className="bg-card/80 backdrop-blur border border-border/50 rounded-xl p-4 shadow-lg">
-                  <div className="text-xs text-muted-foreground mb-1">Hottest Right Now</div>
+                  <div className="text-xs text-muted-foreground mb-1">Fastest Growing</div>
                   <div className="text-lg font-bold text-foreground">Affiliate Sales</div>
-                  <div className="text-xs text-accent">+156% growth this quarter</div>
+                  <div className="text-xs text-accent">+156% growth rate</div>
                 </div>
               </div>
 

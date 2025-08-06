@@ -16,9 +16,9 @@ export function DashboardHeader() {
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">C</span>
+              <span className="text-primary-foreground font-bold text-lg">W</span>
             </div>
-            <span className="font-semibold text-lg">Creator Wealth Tools</span>
+            <span className="font-semibold text-lg">Wealth Tools</span>
           </div>
         </div>
 
