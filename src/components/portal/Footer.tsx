@@ -11,13 +11,13 @@ const Footer = () => {
               <Link to="/">
                 <img 
                   src="/lovable-uploads/27529a08-fcf3-42d5-ba61-5b346c6e882a.png" 
-                  alt="Wintle" 
+                  alt="Creator Wealth Tools" 
                   className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
                 />
               </Link>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Financial intelligence for modern creators. Clarity over chaos, insight over guesswork.
+              The financial intelligence platform built specifically for creators. Finally understand what your content is really worth.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -96,7 +96,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2024 Wintle. All rights reserved.
+            © 2024 Creator Wealth Tools. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

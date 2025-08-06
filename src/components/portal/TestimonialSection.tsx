@@ -10,7 +10,7 @@ const TestimonialSection = () => {
       followers: "2.3M",
       revenue: "$180K/month",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b9c1?w=400",
-      quote: "Wintle showed me patterns I'd never seen—$40K I was missing every month. It sees the signals in my income that I couldn't spot myself.",
+      quote: "Creator Wealth Tools showed me I was literally leaving $40K on the table every month. The pattern recognition is insane – it caught trends in my brand deals that I never would've spotted myself.",
       metrics: {
         growth: "+156%",
         streams: "12 active",
@@ -24,7 +24,7 @@ const TestimonialSection = () => {
       followers: "1.8M",
       revenue: "$240K/month",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
-      quote: "I thought I understood my income. Wintle revealed seasonal flows I'd missed, perfect timing for rate negotiations, and revenue I didn't even know was there. Pure clarity.",
+      quote: "I thought I was on top of my creator finances. Turns out I was completely clueless. CWT showed me seasonal patterns, the best times to negotiate rates, and revenue streams I didn't even know existed. Total game changer.",
       metrics: {
         growth: "+203%",
         streams: "8 active",
@@ -38,7 +38,7 @@ const TestimonialSection = () => {
       followers: "3.1M",
       revenue: "$320K/month",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
-      quote: "Wintle's insights are beautifully accurate. It signaled my Q4 growth three months ahead. Now my content strategy flows from what Wintle shows me coming next.",
+      quote: "The AI predictions are scary good. It called my Q4 brand deal explosion three months early. Now I plan my entire content calendar and business strategy around what CWT tells me is coming.",
       metrics: {
         growth: "+89%",
         streams: "15 active",
@@ -55,13 +55,13 @@ const TestimonialSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Creators Who See{" "}
+            Creators Who Know Their{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Clearly
+              True Worth
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join thousands of creators who found clarity in their creative income
+            Join thousands of creators who turned financial chaos into crystal-clear money intelligence
           </p>
         </div>
 
@@ -69,8 +69,8 @@ const TestimonialSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
           {[
             { number: "2,847", label: "Active Creators", icon: TrendingUp },
-            { number: "$125M+", label: "Income Understood", icon: DollarSign },
-            { number: "94%", label: "Found New Patterns", icon: Star },
+            { number: "$125M+", label: "Revenue Tracked", icon: DollarSign },
+            { number: "94%", label: "Found Hidden Revenue", icon: Star },
             { number: "156%", label: "Avg Revenue Growth", icon: TrendingUp }
           ].map((stat, i) => (
             <div key={i} className="text-center p-6 bg-card/50 backdrop-blur border border-border/50 rounded-xl">
@@ -143,7 +143,7 @@ const TestimonialSection = () => {
                     <div className="text-2xl font-bold text-secondary">
                       {testimonials[activeTestimonial].metrics.timeframe}
                     </div>
-                    <div className="text-xs text-muted-foreground">Using Wintle</div>
+                    <div className="text-xs text-muted-foreground">Using Creator Wealth Tools</div>
                   </div>
                 </div>
 
@@ -179,10 +179,10 @@ const TestimonialSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-muted-foreground mb-6">
-            Ready to see your creative income with complete clarity?
+            Ready to finally understand what your content is actually worth?
           </p>
           <button className="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-            Start Seeing Clearly
+            Get My Creator Financial Intelligence
           </button>
         </div>
       </div>

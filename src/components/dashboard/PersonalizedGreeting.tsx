@@ -18,14 +18,14 @@ export function PersonalizedGreeting() {
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-primary" />
-              <p className="text-sm font-medium text-muted-foreground">Your Wintle</p>
+              <p className="text-sm font-medium text-muted-foreground">Financial Intelligence</p>
             </div>
             <div className="space-y-1">
               <h1 className="text-2xl font-bold">
                 {greeting}, Morgan
               </h1>
               <p className="text-muted-foreground">
-                Here's what's flowing this week
+                Here's what's changed this week
               </p>
             </div>
             <div className="flex items-center gap-4 pt-2">
